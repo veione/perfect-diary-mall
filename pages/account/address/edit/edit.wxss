@@ -1,0 +1,99 @@
+/* pages/account/address/edit/edit.wxss */
+@import '/assets/css/iconfont.wxss';
+@import '/assets/css/global.wxss';
+
+.container {
+  background-color: #F5F5F5;
+}
+
+.main .items {
+  width: 92%;
+  margin: 24rpx auto;
+  background-color: white;
+}
+
+.main .items>.item {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6rpx;
+  border-bottom: 2rpx solid #eee;
+}
+
+.main .items>.item:last-child {
+  border-bottom: none;
+}
+
+.main .items>.item .title {
+  font-size: 26rpx;
+}
+
+.main .items>.item .item-title {
+  width: 68rpx;
+}
+
+.main .items>.item .icon-friends {
+  font-size: 42rpx;
+  color: #07AF12;
+}
+
+.main .items>.item .left {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 24rpx;
+}
+
+.main .items>.item .right {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.main .form>.item:last-child>.left {
+  align-items: flex-start;
+}
+
+.main .items>.item .input-field {
+  width: 480rpx;
+  padding: 12rpx 2rpx 12rpx 12rpx;
+  font-size: 26rpx;
+}
+
+.input-placeholder {
+  font-size: 24rpx;
+  color: #CFCFCF;
+}
+
+
+.btn-group>.btn-delete {
+  width: 120rpx;
+  padding: 24rpx 84rpx;
+  margin: 0 auto;
+  color: #959595;
+  font-size: 26rpx;
+  border: 2rpx solid #959595;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  color: white;
+  background-color: #BA1B28;
+}
+
+.footer .title {
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 32rpx;
+  color: white;
+  text-align: center;
+}

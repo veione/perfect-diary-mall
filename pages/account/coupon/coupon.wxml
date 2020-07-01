@@ -1,0 +1,47 @@
+<!--pages/account/coupon/coupon.wxml-->
+<import src="/pages/template/template.wxml" />
+<view class="container">
+	<view class="header" style="height: {{navBarHeight}}">
+		<view class="fixed w100 navbar">
+			<navbar titleText="优惠券" back-icon="/assets/images/back@3x.png" />
+		</view>
+	</view>
+
+	<view class="main">
+		<view class="exchange">
+			<view class="wrapper">
+				<input type="text" placeholder="请输入优惠码"></input>
+				<view class="btn-exchange">兑换</view>
+			</view>
+		</view>
+
+		<scroll-view class="content" scroll-y="true" style="height: {{contentHeight}};">
+			<view class="tabbar-wrapper" style="height: {{tabbarHeight}};">
+				<view class="tabbar">
+					<view class="items">
+						<view wx:for="{{tabbarItems}}" class="item {{currentTab==index ? 'active' : ''}}" data-index="{{index}}" bindtap="swichNav" wx:key="id">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+
+			<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindNavChange" style="height: {{contentHeight}};">
+				<swiper-item>
+					<view class="items" wx:if="{{orderList.length != 0}}">
+						订单列表
+					</view>
+					<block wx:else>
+						<template is="orderManageEmptyData" data="{{showText: '暂无优惠券哦~'}}"></template>
+					</block>
+				</swiper-item>
+				<swiper-item>
+					<view class="items" wx:if="{{orderList.length != 0}}">
+						订单列表
+					</view>
+					<block wx:else>
+						<template is="orderManageEmptyData" data="{{showText: '暂无优惠券哦~'}}"></template>
+					</block>
+				</swiper-item>
+			</swiper>
+		</scroll-view>
+	</view>
+</view>

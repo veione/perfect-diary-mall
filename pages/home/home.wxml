@@ -1,0 +1,97 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+	<view class="header" style="height: {{navBarHeight}}">
+		<view class="fixed w100 navbar">
+			<navbar titleText="完美日记微商城" />
+		</view>
+	</view>
+	<view class="main">
+		<scroll-view class="content" scroll-y="true">
+			<view class="search-bar section">
+				<icon type="search" class="icon" />
+				<input type="text" class="input-field" disabled="true" placeholder="请输入要搜索的商品" />
+			</view>
+
+			<view class="banner">
+				<swiper indicator-dots="true" autoplay="true" circular="true" indicator-color="#fff" indicator-active-color="orange" class="items">
+					<block wx:for="{{banners}}" wx:key="index">
+						<swiper-item class="item">
+							<image class="cover" src="{{item}}" mode="scaleToFill" />
+						</swiper-item>
+					</block>
+				</swiper>
+			</view>
+
+			<view class="content">
+				<view class="material">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/b4830f7d1b2e43598d61d50346e8bd55.jpg" mode="widthFix" />
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/dc4c8686b9b44609afbaf78647551cc7.jpg" mode="widthFix" />
+				</view>
+				<view class="material page2">
+					
+				</view>
+				<view class="material page3">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/2ec33114d0574713befafdb35b49c83c.jpg" mode="widthFix" />
+				</view>
+				<view class="material page4">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/4320d15a93904314815f8e6a40a87800.jpg" mode="widthFix" />
+				</view>
+				<view class="material page5">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/908aa6c2568345fc9209ba770e106d8c.jpg" mode="widthFix" />
+				</view>
+				<view class="material page6">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/a04a10f147f84725b33fd95b05de26f7.jpg" mode="widthFix" />
+				</view>
+				<view class="material page7">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/5db46231b75048bb81c4a2e50c0b5df2.jpg" mode="widthFix" />
+				</view>
+				<view class="material page8">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/850118b8aec4472eb83198d2c8bd3909.jpg" mode="widthFix" />
+				</view>
+				<view class="material page9">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/ac113c9bb53a45e8ba9217b7b5baa6de.jpg" mode="widthFix" />
+				</view>
+				<view class="material page10">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/38c2c075b02d463d85dd9a1d2a068545.jpg" mode="widthFix" />
+				</view>
+				<view class="material page11">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/fbe9d3dd272548329f710f28391fdf8b.jpg" mode="widthFix" />
+				</view>
+				<view class="material page12">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/bf3a8339f3e84605b239f46c045623fc.jpg" mode="widthFix" />
+				</view>
+				<view class="material page13">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/6ce3625d6b264d779eb027e241a8dbdb.jpg" mode="widthFix" />
+				</view>
+				<view class="material page14">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/3ade524531b5492e9ab7970b6084bc14.jpg" mode="widthFix" />
+				</view>
+				<view class="material page15">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/18be5b7f6ed846359c211e9c86b7c119.jpg" mode="widthFix" />
+				</view>
+				<view class="material page16">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/4327c8c90fd44bc2933cb7d3be95870b.jpg" mode="widthFix" />
+				</view>
+				<view class="material page17">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/17d831ae17944bc89e6e398d8d6ccd82.jpg" mode="widthFix" />
+				</view>
+				<view class="material page18">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/30cb9967f8e6433fa8a358431b168608.jpg" mode="widthFix" />
+				</view>
+				<view class="material page19">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/2eae461b9d674648b843ecebdbd66bd8.jpg" mode="widthFix" />
+				</view>
+				<view class="material page20">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/a6a0ded679a145ba86f1da05102d9626.jpg" mode="widthFix" />
+				</view>
+				<view class="material page21">
+					<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/c464f96005b04569bbec1d18cf20e164.jpg" mode="widthFix" />
+				</view>
+			</view>
+
+			<view class="footer">
+				<image class="w100 cover" src="https://pub-img.perfectdiary.com/material/image/2020/06/4f3887707ec34b96874565b989246528.jpg" mode="widthFix" />
+			</view>
+		</scroll-view>
+	</view>
+</view>

@@ -1,0 +1,25 @@
+<!--pages/account/setting/setting.wxml-->
+<view class="container">
+	<view class="header" style="height: {{navBarHeight}}">
+		<view class="fixed w100 navbar">
+			<navbar titleText="设置" back-icon="/assets/images/back@3x.png" />
+		</view>
+	</view>
+	<view class="main">
+		<scroll-view class="content" scroll-y="true">
+			<view class="profile">
+				<image class="avatar" src="https://pub-img.perfectdiary.com/comment/image/2020/06/f2ea7bde509244c395b2ca5e362584af.png" mode="fitToFill" />
+				<view class="btn-change">更换</view>
+			</view>
+
+			<view class="info">
+				<text class="title">昵称</text>
+				<input class="input-field" type="text" placeholder="请输入昵称" value="凌星" />
+			</view>
+		</scroll-view>
+	</view>
+
+	<view class="footer fixed w100 bottom">
+		<view class="btn-save">保存</view>
+	</view>
+</view>

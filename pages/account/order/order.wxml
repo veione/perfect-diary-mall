@@ -1,0 +1,64 @@
+<!--pages/account/order/order.wxml-->
+<import src="/pages/template/template.wxml" />
+<view class="container">
+	<view class="header" style="height: {{navBarHeight}}">
+		<view class="fixed w100 navbar">
+			<navbar titleText="订单中心" back-icon="/assets/images/back@3x.png" />
+		</view>
+	</view>
+
+	<view class="main">
+		<scroll-view class="content" scroll-y="true" style="height: {{contentHeight}};">
+			<view class="tabbar-wrapper" style="height: {{tabbarHeight}};">
+				<view class="tabbar">
+					<view class="items">
+						<view wx:for="{{tabbarItems}}" class="item {{currentTab==index ? 'active' : ''}}" data-index="{{index}}" bindtap="swichNav" wx:key="id">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+
+			<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindNavChange" style="height: {{contentHeight}};">
+				<swiper-item>
+					<view class="items" wx:if="{{orderList.length != 0}}">
+						订单列表
+					</view>
+					<block wx:else>
+						<template is="orderManageEmptyData" data="{{showShoppingBtn: true, showText: '暂无订单数据~'}}"></template>
+					</block>
+				</swiper-item>
+				<swiper-item>
+					<view class="items" wx:if="{{orderList.length != 0}}">
+						订单列表
+					</view>
+					<block wx:else>
+						<template is="orderManageEmptyData" data="{{showShoppingBtn: true, showText: '暂无订单数据~'}}"></template>
+					</block>
+				</swiper-item>
+        <swiper-item>
+					<view class="items" wx:if="{{orderList.length != 0}}">
+						订单列表
+					</view>
+					<block wx:else>
+						<template is="orderManageEmptyData" data="{{showShoppingBtn: true, showText: '暂无订单数据~'}}"></template>
+					</block>
+				</swiper-item>
+        <swiper-item>
+					<view class="items" wx:if="{{orderList.length != 0}}">
+						订单列表
+					</view>
+					<block wx:else>
+						<template is="orderManageEmptyData" data="{{showShoppingBtn: true, showText: '暂无订单数据~'}}"></template>
+					</block>
+				</swiper-item>
+        <swiper-item>
+					<view class="items" wx:if="{{orderList.length != 0}}">
+						订单列表
+					</view>
+					<block wx:else>
+						<template is="orderManageEmptyData" data="{{showShoppingBtn: true, showText: '暂无订单数据~'}}"></template>
+					</block>
+				</swiper-item>
+			</swiper>
+		</scroll-view>
+	</view>
+</view>

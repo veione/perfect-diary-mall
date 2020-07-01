@@ -1,0 +1,115 @@
+/* pages/category/category.wxss */
+@import '/assets/css/global.wxss';
+
+.header,
+.main .footer {
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  z-index: 9999;
+}
+
+.search-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 24rpx 12rpx;
+  padding-bottom: 12rpx;
+  border-bottom: 2rpx solid #EEEEEE;
+}
+
+.search-bar .icon {
+  padding: 12rpx 12rpx;
+}
+
+.search-bar .input-field {
+  width: 100%;
+  height: 38rpx;
+  font-size: 24rpx;
+}
+
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.menus {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 20rpx;
+  background-color: #F5F7FA;
+}
+
+.cate-item {
+  height: 48rpx;
+  padding: 24rpx 0;
+  color: #6D798F;
+}
+
+.cate-item.active {
+  position: relative;
+  color: black;
+  background-color: white;
+}
+
+.cate-item.active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 8rpx;
+  height: 32rpx;
+  background-color: #B50006;
+}
+
+.menu-left {
+  width: 20%;
+}
+
+.menu-right {
+  width: 80%;
+  padding-left: 12rpx;
+  background-color: white;
+}
+
+.cate-product {
+  padding-bottom: 128rpx;
+}
+
+.banner>.title {
+  padding: 24rpx 0;
+  font-size: 26rpx;
+  color: #535353;
+}
+
+.items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.items .item {
+  width: 33%;
+  height: 240rpx;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.items .item .img {
+  width: 164rpx;
+  height: 164rpx;
+}
+
+.items .item>.title {
+  text-align: center;
+  font-size: 26rpx;
+  color: #434343;
+}

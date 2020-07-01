@@ -1,0 +1,73 @@
+/* pages/account/address/address.wxss */
+@import '/assets/css/iconfont.wxss';
+@import '/assets/css/global.wxss';
+
+.main {
+  background-color: #F5F5F5;
+}
+
+.main .items {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.main .items>.item {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 24rpx 0;
+  padding: 32rpx 24rpx;
+  background-color: white;
+  border-bottom: 2rpx solid #ddd;
+  border-radius: 6rpx;
+  border-bottom: 12rpx solid transparent;
+  background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0/5em 5em;
+}
+
+.main .items>.item>.info {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main .items>.item>.info>.tag {
+  padding: 4rpx 12rpx;
+  font-size: 24rpx;
+  color: white;
+  background-color: black;
+}
+
+.main .items>.item>.info>.phone {
+  color: #787878;
+}
+
+.main .items>.item>.address {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .items>.item>.address .icon {
+  font-size: 48rpx;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  color: white;
+  background-color: #BA1B28;
+}
+
+.footer .title {
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 32rpx;
+  color: white;
+  text-align: center;
+}

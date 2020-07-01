@@ -1,0 +1,13 @@
+<template name="orderManageEmptyData">
+	<view class="order-empty-wrapper">
+		<view class="icon">
+			<image class="img" src="{{icon != undefined ? icon : '/assets/images/empty.png'}}" mode="aspectFit" style="{{iconStyle}}"></image>
+		</view>
+		<view class="tips">
+			<text>{{showText}}</text>
+		</view>
+		<view class="btn-group">
+			 <navigator wx:if="{{showShoppingBtn}}" url="/pages/home/home" open-type="switchTab" hover-class="other-navigator-hover" class="btn btn-shopping">去逛逛</navigator>
+		</view>
+	</view>
+</template>

@@ -1,0 +1,61 @@
+/* pages/account/setting/setting.wxss */
+@import '/assets/css/global.wxss';
+@import '/assets/css/iconfont.wxss';
+
+.profile {
+  height: 600rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  background-color: black;
+}
+
+.profile>.info {
+  color: white;
+}
+
+.profile>.avatar {
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 50%;
+}
+
+.profile .btn-change {
+  margin: 24rpx 0;
+  padding: 6rpx 24rpx;
+  color: #ccc;
+  border: 2rpx solid #ccc;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24rpx 0;
+}
+
+.info>.title {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+.info .input-field {
+  width: 70%;
+  margin: 0 auto;
+  padding: 18rpx 12rpx;
+  font-size: 24rpx;
+  text-align: center;
+  border: 2rpx solid #BBBBBB;
+}
+
+.footer {
+  height: 108rpx;
+  line-height: 108rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,45 @@
+<!--pages/category/category.wxml-->
+<view class="container">
+	<view class="header" style="height: {{navBarHeight}}">
+		<view class="fixed w100 navbar">
+			<navbar titleText="分类" />
+			<view class="search-bar section">
+				<icon type="search" class="icon" />
+				<input type="text" class="input-field" disabled="true" placeholder="请输入要搜索的商品" />
+			</view>
+		</view>
+	</view>
+	<view class="main">
+		<scroll-view class="content" scroll-y="true">
+			<view class="menus">
+				<view class="menu-left">
+					<scroll-view class="" scroll-y scroll-with-animation="{{true}}" style="height: {{contentHeight}};">
+						<view class="cate-item {{curIndex==index?'active':''}} text-center" wx:for="{{categoryList}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchCategory">
+							<text>{{item.title}}</text>
+						</view>
+					</scroll-view>
+				</view>
+				<view class="menu-right">
+					<swiper vertical="true" class="section" current="{{toView}}" style="height: {{contentHeight}};">
+						<swiper-item>
+							<scroll-view class="cate-box" id="{{item.id}}" scroll-y style="height: {{contentHeight}};">
+								<view class="banner">
+									<image src="{{categoryList[curIndex].banner.image_url}}" mode="widthFix" />
+									<view class="title">{{categoryList[curIndex].title}}</view>
+								</view>
+								<view class="items">
+									<block wx:for="{{categoryList[curIndex].subCategoryList}}" wx:key="index">
+										<view class="item">
+											<image class="img" src="{{item.image_url}}" mode="aspectFill" />
+											<view class="title">{{item.title}}</view>
+										</view>
+									</block>
+								</view>
+							</scroll-view>
+						</swiper-item>
+					</swiper>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+</view>

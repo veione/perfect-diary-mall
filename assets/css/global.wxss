@@ -1,0 +1,67 @@
+.section {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.mr-5 {
+  margin-right: 10rpx;
+}
+
+.ml-5 {
+  margin-left: 10rpx;
+}
+
+.mt-5 {
+  margin-top: 10rpx;
+}
+
+.mt-10 {
+  margin-top: 20rpx;
+}
+
+.mb-5 {
+  margin-bottom: 10rpx;
+}
+
+.pt-5 {
+  padding-top: 10rpx;
+}
+
+.pt-6 {
+  padding-top: 12rpx;
+}
+
+.pt-10 {
+  padding-top: 20rpx;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.inline-block {
+  display: inline-block;
+}

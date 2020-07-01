@@ -1,0 +1,58 @@
+/* pages/account/coupon/coupon.wxss */
+@import '/pages/template/template.wxss';
+
+.container {
+  position: relative;
+  background-color: #F3F3F3;
+}
+
+.tabbar {
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+}
+
+.tabbar .items {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tabbar .items .item {
+  padding: 24rpx 0;
+  color: #BEBEBE;
+  border-bottom: 4rpx solid transparent;
+}
+
+.tabbar .items>.active {
+  color: black;
+  border-bottom: 4rpx solid #B50006;
+}
+
+.exchange {
+  width: 100%;
+  padding: 32rpx 0 24rpx 0;
+  background-color: white;
+}
+
+.exchange>.wrapper {
+  width: 92%;
+  margin: 0 auto;
+  padding-bottom: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #EEEEEE;
+}
+
+.exchange .btn-exchange {
+  padding: 12rpx 32rpx;
+  color: white;
+  background-color: black;
+}
+
+.content {
+  background-color: white;
+}

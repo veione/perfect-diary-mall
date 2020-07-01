@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/user/user",
+    "pages/account/setting/setting",
+    "pages/account/coupon/coupon",
+    "pages/account/address/address",
+    "pages/account/address/edit/edit",
+    "pages/account/order/order"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "完美日记商城",
+    "navigationBarTextStyle":"black",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#f00",
+    "borderStyle": "white",
+    "list": [{
+      "text": "首页",
+      "pagePath": "pages/home/home",
+      "iconPath": "assets/images/nav/home.png",
+      "selectedIconPath": "assets/images/nav/home-active.png"
+    }, {
+      "text": "分类",
+      "pagePath": "pages/category/category",
+      "iconPath": "assets/images/nav/category.png",
+      "selectedIconPath": "assets/images/nav/category-active.png"
+    }, {
+      "text": "购物袋",
+      "pagePath": "pages/cart/cart",
+      "iconPath": "assets/images/nav/cart.png",
+      "selectedIconPath": "assets/images/nav/cart-active.png"
+    }, {
+      "text": "我的",
+      "pagePath": "pages/user/user",
+      "iconPath": "assets/images/nav/my.png",
+      "selectedIconPath": "assets/images/nav/my-active.png"
+    }],
+    "position": "bottom"
+  }
+}

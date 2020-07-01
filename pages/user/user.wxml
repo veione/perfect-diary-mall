@@ -1,0 +1,81 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+	<view class="header" style="height: {{navBarHeight}}">
+		<view class="fixed w100 navbar">
+			<navbar titleText="我的" />
+		</view>
+	</view>
+	<view class="main">
+		<scroll-view class="content" scroll-y="true">
+			<view class="profile">
+				<image class="avatar" src="https://pub-img.perfectdiary.com/comment/image/2020/06/f2ea7bde509244c395b2ca5e362584af.png" mode="fitToFill" />
+				<view class="info">
+					<text class="nickname">凌星</text>
+					<view class="iconfont icon-edit inline-block" bindtap="toAccountSetting"/>
+				</view>
+			</view>
+
+			<view class="order section">
+				<view class="header">
+					<view class="left">我的订单</view>
+					<view class="right" data-type="0" bindtap="toOrderPage">
+						<text class="title">全部订单</text>
+						<icon class="icon iconfont icon-right" />
+					</view>
+				</view>
+				<view class="items">
+					<view class="item" data-type="1" bindtap="toOrderPage">
+						<view class="icon iconfont icon-daifukuan" />
+						<text class="title">待付款</text>
+					</view>
+					<view class="item" data-type="2" bindtap="toOrderPage">
+						<view class="icon iconfont icon-daifahuo1" />
+						<text class="title">待发货</text>
+					</view>
+					<view class="item" data-type="3" bindtap="toOrderPage">
+						<icon class="icon iconfont icon-daifahuo" />
+						<text class="title">待收货</text>
+					</view>
+					<view class="item" data-type="4" bindtap="toOrderPage">
+						<view class="icon iconfont icon-tuihuo" />
+						<text class="title">退货/款</text>
+					</view>
+				</view>
+			</view>
+
+			<view class="menus">
+				<view class="menu" bindtap="toCouponPage">
+					<view class="left">
+						<view class="icon iconfont icon-youhuiquan inline-block" />
+						<text class="title">优惠券</text>
+					</view>
+				</view>
+				<view class="menu" bindtap="toAddressPage">
+					<view class="left">
+						<icon class="icon iconfont icon-address inline-block" />
+						<text class="title inline-block">收货地址</text>
+					</view>
+				</view>
+
+				<view class="menu">
+					<view class="left">
+						<view class="icon iconfont icon-kefu inline-block" />
+						<text class="title">联系客服</text>
+					</view>
+				</view>
+			</view>
+
+			<view class="menus">
+				<view class="menu">
+					<view class="left">
+						<view class="icon iconfont icon-shouji inline-block" />
+						<text class="title">立即绑定手机</text>
+					</view>
+					<view class="right">
+						<view class="btn-bind" bindtap="onBindPhone">绑定手机</view>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+</view>

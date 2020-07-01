@@ -1,0 +1,38 @@
+/* pages/account/order/order.wxss */
+@import '/pages/template/template.wxss';
+
+.container {
+  position: relative;
+  background-color: #F3F3F3;
+}
+
+.tabbar {
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+}
+
+.tabbar .items {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tabbar .items .item {
+  padding: 24rpx 0;
+  color: #BEBEBE;
+  font-size: 24rpx;
+  border-bottom: 4rpx solid transparent;
+}
+
+.tabbar .items>.active {
+  color: black;
+  font-size: 32rpx;
+  border-bottom: 4rpx solid #B50006;
+}
+
+.content {
+  background-color: #F5F5F5;
+}
